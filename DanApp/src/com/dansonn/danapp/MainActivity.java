@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -56,5 +58,13 @@ public class MainActivity extends ActionBarActivity {
     	intent.putExtra(EXTRA_MESSAGE,  message);
     	startActivity(intent);
     
+    }
+    
+    private void openSearch() {
+        Toast.makeText(this, "Search button pressed", Toast.LENGTH_SHORT).show();
+    }
+    
+    private void openSettings() {
+        Toast.makeText(this, "Settings button pressed", Toast.LENGTH_SHORT).show();
     }
 }
