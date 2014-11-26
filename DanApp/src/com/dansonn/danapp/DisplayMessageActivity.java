@@ -17,7 +17,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.activity_display_message);
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Get msg from intent
 		Intent intent = getIntent();
@@ -35,6 +35,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
 		}*/
 	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
